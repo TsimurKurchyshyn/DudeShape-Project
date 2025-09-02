@@ -376,11 +376,14 @@ body{
   display: flex;
   flex-direction: row;
   gap: 100px;
+  margin-top: 20px;
 }
 
-.furniture__section-name{
+.furniture__section{
   font-size: 24px;
   color: #919090;
+  cursor: pointer;
+  user-select: none;
 }
 
 .furniture__section-line{
@@ -391,9 +394,30 @@ body{
   opacity: 0;
 }
 
+.furniture__section-room{
+  color: #154444;
+}
+
+.furniture__section-roomline{
+  opacity: 1;
+}
+
+.furniture__main{
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+}
+
 .furniture__main-pic{
   width: 580px;
   height: 410px;
+}
+
+.furniture__list{
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  gap: 40px;
+  margin-top: 30px;
 }
 
 .furniture__list-block{
@@ -404,6 +428,14 @@ body{
   border-color: #D9DCE5;
   justify-content: center;
   align-content: center;
+  text-align: center;
+  color: #808080;
+  cursor: pointer;
+  user-select: none;
+}
+
+.furniture__list-text{
+  margin-top: 5px;
 }
 
 .furniture__list-img{
@@ -413,8 +445,107 @@ body{
 
 .furniture__list-text{
   font-size: 16px;
-  color: #808080;
   font-weight: 500;
+}
+
+.furniture__list-office{
+  background-color: #154444;
+  color: #FFFFFF;
+}
+
+.customers{
+  justify-items: center;
+  margin-top: 100px;
+  width: 1200px;
+  justify-self: center;
+}
+
+.customers__pic-circle{
+  width: 492.4248046875px;
+  height: 492.4248046875px;
+  border-radius: 50%;
+  background-color: #244D4D;
+  position: absolute;
+  z-index: 1;
+}
+
+.customers__separator{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 150px;
+}
+
+.customers__pic-img{
+  width: 459.0914306640625px;
+  height: 492.4248046875px;
+  position: absolute;
+  z-index: 2;
+  margin-left: 105.2px;
+}
+
+.customers__main{
+  margin-top: 75px;
+}
+
+.customers__main-head{
+  font-size: 32px;
+  color: #242424;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.customers__main-text{
+  font-size: 20px;
+  color: #383738;
+  margin-bottom: 20px;
+}
+
+.customers__rate{
+  display: flex;
+  flex-direction: row;
+  color: #000;
+  gap: 10px
+}
+
+.customers__rate-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.customers__rate-name{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.customers__rate-rating{
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.news{
+  justify-items: center;
+  margin-top: 300px;
+  width: 1200px;
+  justify-self: center;
+}
+
+.news__main{
+  width: 1200px;
+  height: 394.3199157714844px;
+  background-color: #F4F6F6;
+  color: #222222;
+}
+
+.news__main-head{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.news__main-text{
+  font-size: 16px;
 }
 
 @media (max-width: 1024px) {
