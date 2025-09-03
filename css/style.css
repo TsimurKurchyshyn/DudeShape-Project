@@ -525,27 +525,147 @@ body{
 }
 
 .news{
-  justify-items: center;
   margin-top: 300px;
   width: 1200px;
+  height: 395px;
   justify-self: center;
 }
 
 .news__main{
   width: 1200px;
-  height: 394.3199157714844px;
+  height: 395px;
   background-color: #F4F6F6;
   color: #222222;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
 }
 
 .news__main-head{
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 32px;
+  padding-left: 300px;
+  padding-right: 300px;
+  margin-bottom: 30px;
 }
 
 .news__main-text{
   font-size: 16px;
+  padding-left: 350px;
+  padding-right: 350px;
+  margin-bottom: 30px;
+}
+
+.news__register{
+  width: 470px;
+  height: 67px;
+  background-color: #FFFFFF;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  justify-self: center;
+}
+
+.news__register-fill{
+  border: none;
+  color: #BABABA;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.news__register-submit{
+  width: 125px;
+  height: 52px;
+  background-color: #305F64;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-left: 100px;
+}
+
+.footer{
+  margin-top: 150px;
+  width: 100%;
+  height: 442px;
+  background-color: #305F64;
+  color: #FFFFFF;
+  justify-content: center;
+}
+
+.footer__main{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer__main-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__column-head{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.footer__column-title{
+  font-size: 24px;
+}
+
+.footer__column-tab{
+  font-size: 18px;
+}
+
+.footer__column-image{
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__column-pic{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.footer__line{
+  width: 100%;
+  height: 2px;
+  border: none;
+  background-color: #407980;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer__register{
+  width: 250px;
+  height: 48px;
+  background-color: #FFFFFF;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.footer__register-fill{
+  border: none;
+  color: #859395;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer__register-submit{
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #FFB624;
+  color: #FFFFFF;
+}
+
+.footer__end-head{
+  font-weight: 400;
+  font-size: 18px;
+  justify-self: center;
 }
 
 @media (max-width: 1024px) {
