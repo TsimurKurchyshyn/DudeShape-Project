@@ -77,8 +77,8 @@ textarea:focus, input:focus{
 }
 
 .nav{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-direction: row;
   align-items: center;
   height: 80px;
 }
@@ -107,10 +107,15 @@ textarea:focus, input:focus{
   font-weight: 700;
   font-size: 24px;
   color: #244D4D;
+  margin-right: auto;
+}
+
+.menu__searchtabs{
+  justify-content: space-between;
+  margin-left: auto;
 }
 
 .loupe{
-  position: relative;
   justify-self: end;
 }
 
@@ -686,16 +691,27 @@ textarea:focus, input:focus{
   margin-top: 20px;
 }
 
-@media (max-width: 1024px) {
-  .about__list-img{
-    width: 40px;
-    height: 40px;
+@media (max-width: 414px) {
+  .nav{
+    flex-direction: column;
   }
 
-  .about__paragraph{
-    font-size: 15px;
+  .menu{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
   }
-  .about__list-paragraph{
-    font-size: 15px;
+
+  .logo{
+    margin-right: 0%;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .menu__searchtabs{
+    margin-left: 0%;
+    margin-top: 15px;
   }
 }
